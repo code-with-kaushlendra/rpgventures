@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Ventures | News & Magazine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                 <div class="logo">
+    <img src="/images/rpg_ventures_hr_recruitment_logo.jpeg" alt="RPG Ventures Logo">
+    <div class="logo-text">
+        <!-- <h1>RPG Ventures</h1> -->
+        <!-- <p>HR Solutions</p> -->
+    </div>
+</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="clients.html" class="nav-link">Clients</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link active">More <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="franchisees.html">Franchisees</a></li>
+                            <li><a href="awards.html">Awards</a></li>
+                            <li><a href="fun-joy.html">Fun & Joy</a></li>
+                            <li><a href="news.html" class="active">News & Magazine</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>News & Magazine</h1>
+            <p>Stay updated with the latest news, insights, and trends in HR industry</p>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="featured-news">
+        <div class="container">
+            <h2>Featured Stories</h2>
+            <div class="featured-grid">
+                <div class="featured-main">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Featured News">
+                    <div class="featured-content">
+                        <span class="news-category">Industry Trends</span>
+                        <h3>The Future of Remote Work: How HR is Adapting to New Realities</h3>
+                        <p>As remote work becomes the new normal, HR departments are revolutionizing their approaches to talent acquisition, employee engagement, and performance management...</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="fas fa-user"></i> Dr. Ravindra Pratap Gupta</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article</a>
+                    </div>
+                </div>
+                <div class="featured-sidebar">
+                    <div class="sidebar-news">
+                        <img src="/placeholder.svg?height=150&width=200" alt="AI in Recruitment">
+                        <div class="sidebar-content">
+                            <h4>AI Revolution in Recruitment</h4>
+                            <p>How artificial intelligence is transforming the hiring process...</p>
+                            <span class="news-date">March 12, 2024</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-news">
+                        <img src="/placeholder.svg?height=150&width=200" alt="Employee Wellness">
+                        <div class="sidebar-content">
+                            <h4>Employee Wellness Programs</h4>
+                            <p>The importance of mental health and wellness in workplace...</p>
+                            <span class="news-date">March 10, 2024</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-news">
+                        <img src="/placeholder.svg?height=150&width=200" alt="Diversity & Inclusion">
+                        <div class="sidebar-content">
+                            <h4>Building Inclusive Workplaces</h4>
+                            <p>Strategies for creating diverse and inclusive work environments...</p>
+                            <span class="news-date">March 8, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="news-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" onclick="showCategory('all')">All News</button>
+                <button class="tab-btn" onclick="showCategory('company')">Company News</button>
+                <button class="tab-btn" onclick="showCategory('industry')">Industry Insights</button>
+                <button class="tab-btn" onclick="showCategory('trends')">HR Trends</button>
+                <button class="tab-btn" onclick="showCategory('events')">Events</button>
+            </div>
+
+            <div class="news-grid" id="all-news">
+                <article class="news-card">
+                    <img src="/placeholder.svg?height=250&width=350" alt="Company Expansion">
+                    <div class="news-content">
+                        <span class="news-category company">Company News</span>
+                        <h3>RPG Ventures Opens New Branch in Bangalore</h3>
+                        <p>We are excited to announce the opening of our new branch office in Bangalore, expanding our presence in South India...</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> March 14, 2024</span>
+                            <span><i class="fas fa-eye"></i> 1.2k views</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="/placeholder.svg?height=250&width=350" alt="HR Technology">
+                    <div class="news-content">
+                        <span class="news-category industry">Industry Insights</span>
+                        <h3>Digital Transformation in HR: A Complete Guide</h3>
+                        <p>Explore how digital technologies are reshaping human resources and what it means for the future of work...</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> March 13, 2024</span>
+                            <span><i class="fas fa-eye"></i> 2.1k views</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="/placeholder.svg?height=250&width=350" alt="Talent Acquisition">
+                    <div class="news-content">
+                        <span class="news-category trends">HR Trends</span>
+                        <h3>Top 10 Talent Acquisition Strategies for 2024</h3>
+                        <p>Discover the most effective talent acquisition strategies that are driving success in today's competitive market...</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> March 11, 2024</span>
+                            <span><i class="fas fa-eye"></i> 1.8k views</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="/placeholder.svg?height=250&width=350" alt="HR Conference">
+                    <div class="news-content">
+                        <span class="news-category events">Events</span>
+                        <h3>RPG Ventures Hosts Annual HR Excellence Summit</h3>
+                        <p>Join us for our annual HR Excellence Summit featuring industry leaders, innovative solutions, and networking opportunities...</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> March 9, 2024</span>
+                            <span><i class="fas fa-eye"></i> 950 views</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="/placeholder.svg?height=250&width=350" alt="Employee Engagement">
+                    <div class="news-content">
+                        <span class="news-category trends">HR Trends</span>
+                        <h3>Building Strong Employee Engagement in Remote Teams</h3>
+                        <p>Learn effective strategies to maintain high levels of employee engagement in distributed work environments...</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> March 7, 2024</span>
+                            <span><i class="fas fa-eye"></i> 1.5k views</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="/placeholder.svg?height=250&width=350" alt="Strategic Partnership">
+                    <div class="news-content">
+                        <span class="news-category company">Company News</span>
+                        <h3>Strategic Partnership with Leading Tech Companies</h3>
+                        <p>RPG Ventures announces strategic partnerships with major technology companies to enhance our service offerings...</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+                            <span><i class="fas fa-eye"></i> 1.1k views</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated with RPG Ventures</h2>
+                    <p>Subscribe to our newsletter and get the latest HR insights, industry trends, and company updates delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive -->
+    <section class="news-archive">
+        <div class="container">
+            <h2>News Archive</h2>
+            <div class="archive-grid">
+                <div class="archive-month">
+                    <h3>March 2024</h3>
+                    <ul>
+                        <li><a href="#">The Future of Remote Work: How HR is Adapting</a> <span>Mar 15</span></li>
+                        <li><a href="#">RPG Ventures Opens New Branch in Bangalore</a> <span>Mar 14</span></li>
+                        <li><a href="#">Digital Transformation in HR: A Complete Guide</a> <span>Mar 13</span></li>
+                        <li><a href="#">AI Revolution in Recruitment</a> <span>Mar 12</span></li>
+                    </ul>
+                </div>
+                <div class="archive-month">
+                    <h3>February 2024</h3>
+                    <ul>
+                        <li><a href="#">Top 10 Talent Acquisition Strategies for 2024</a> <span>Feb 28</span></li>
+                        <li><a href="#">Building Inclusive Workplaces</a> <span>Feb 25</span></li>
+                        <li><a href="#">Employee Wellness Programs</a> <span>Feb 22</span></li>
+                        <li><a href="#">HR Technology Trends</a> <span>Feb 18</span></li>
+                    </ul>
+                </div>
+                <div class="archive-month">
+                    <h3>January 2024</h3>
+                    <ul>
+                        <li><a href="#">Year in Review: 2023 Achievements</a> <span>Jan 30</span></li>
+                        <li><a href="#">New Year, New HR Strategies</a> <span>Jan 15</span></li>
+                        <li><a href="#">Industry Predictions for 2024</a> <span>Jan 10</span></li>
+                        <li><a href="#">Team Building in the Digital Age</a> <span>Jan 5</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RPG Ventures</h3>
+                    <p>Powered by passion for excellence</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Dr-Ravindra-Pratap-Gupta-100063541372506/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/ravindra9" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/ravindrapratapgupta" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ravindrapratapgupta9/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Talent Acquisition</li>
+                        <li>HR Outsourcing</li>
+                        <li>Payroll Processing</li>
+                        <li>Training & Development</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 8433680856/57/58/59/60/</p>
+                    <p><i class="fas fa-envelope"></i>connected@rpgventures.net</p>
+                    <p><i class="fas fa-map-marker-alt"></i> India: Head Office Navi Mumbai: Aviyana HR Solutions (A division of Aviyana Ventures Pvt. Ltd.), Aviyana House-609, 608, 607, 606, Parth Solitaire Commercial Complex, Plot No-2, Sector-9E, Kalamboli, Near D-Mart, Navi Mumbai, Maharashtra-410218
+
+Aviyana House, C/o Singhania & Co, 83-C, Mittal Towers, Nariman Point, Mumbai</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RPG Ventures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
