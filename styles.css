@@ -32,6 +32,7 @@ body {
 .navbar {
   padding: 0 20px;
   height:auto;
+  margin-bottom: 10px;
 }
 
 .nav-container {
@@ -1151,28 +1152,33 @@ iframe {
   /* Logo Container */
 .logo {
     display: flex;
-    align-items: center;   /* align image + text vertically */
-    gap: 8px;  
-    padding:0;
-    margin:0;
-               /* space between image and text */
+    align-items: center;
+    gap: 4px; /* reduced gap */
+    padding: 0;
+    margin: 0;
 }
 
 /* Logo Image */
 .logo img {
-    max-height: 120px;   /* bigger on desktop */
+    max-height: 50px;  /* standard size for mobile */
     width: auto;
     object-fit: contain;
-  
-
+    image-rendering: crisp-edges; /* helps with pixel clarity */
+    display: block;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
     .logo img {
-        max-height: 120px; 
-        transform: scale(1.3); /* smaller on mobile */
+        max-height: 70px; /* slightly bigger on tablet */
     }
 }
+
+@media (min-width: 1024px) {
+    .logo img {
+        max-height: 70px; /* bigger on desktop */
+    }
+}
+
 
 
 /* Logo Text */
@@ -1188,5 +1194,60 @@ iframe {
     color: #008080;        /* highlight color for tagline */
     margin: 0;
     font-style: italic;
+}
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* All slides hidden by default */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+    transition: opacity 0.8s ease;
+}
+
+/* Only active slide is visible */
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    position: absolute;
+}
+
+/* VIDEO styling */
+.slide video,
+.slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* TEXT CONTENT styling */
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 2;
+    color: white;
+    text-align: center;
+
+    padding: 2rem;
+    width: 80%;
+    max-width: 900px;
 }
 

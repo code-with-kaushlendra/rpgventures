@@ -61,7 +61,7 @@ function currentSlideFunc(n) {
 
 // Auto-play slider
 if (slides.length > 0) {
-  setInterval(nextSlide, 5000) // Change slide every 5 seconds
+  setInterval(nextSlide, 10000) // Change slide every 10 seconds
 }
 
 // Smooth scrolling for anchor links
