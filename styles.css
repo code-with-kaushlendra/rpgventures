@@ -1251,3 +1251,34 @@ iframe {
     max-width: 900px;
 }
 
+.aviyana-legacy {
+    text-align: center;
+    background-color:white;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+}
+
+.aviyana-legacy h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.aviyana-legacy p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.aviyana-logo {
+    max-height: 120px;
+    width: auto;
+    filter: grayscale(0);
+    transition: transform 0.3s ease;
+}
+
+.aviyana-logo:hover {
+    transform: scale(1.05);
+}
+
+
